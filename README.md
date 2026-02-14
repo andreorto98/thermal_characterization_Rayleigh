@@ -140,23 +140,6 @@ Quantifies inter-trial variability (\~1%).
 
 ------------------------------------------------------------------------
 
-# Requirements
-
-Python ≥ 3.8
-
-Required packages:
-
--   numpy
--   matplotlib
--   scipy
--   pypandoc (for file generation)
-
-Install via:
-
-    pip install numpy matplotlib scipy pypandoc
-
-------------------------------------------------------------------------
-
 # Citation
 
 If you use this repository or build upon this work, please cite:
