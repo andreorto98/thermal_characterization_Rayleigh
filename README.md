@@ -1,9 +1,7 @@
 # Characterization of Thermal Effects on Sensorized e-Skins with Rayleigh Backscattering Optical Fiber
 
-Supporting repository for the paper:
-
-**Characterization of Thermal Effects on Sensorized e-Skins with
-Rayleigh Backscattering Optical Fiber**
+This repository contain supporting material for the paper: *Characterization of Thermal Effects on Sensorized e-Skins with
+Rayleigh Backscattering Optical Fiber*, ensuring reproducibility and transparency of the full analysis pipeline.
 
 ------------------------------------------------------------------------
 
@@ -27,14 +25,14 @@ The code supports the results presented in the paper, where we:
 
 # Repository Structure
 
-. ├── data/ \# Preprocessed experimental datasets\
-├── termistors_calibration_params.json\
-├── termistors_calibration_params_2.json\
-├── utils.py \# Temperature reconstruction utilities\
-├── patch_characterization.py \# Script 1 -- Thermal sensitivity
-estimation\
-├── join_plots.py \# Script 2 -- Spatial and reproducibility analysis\
-└── README.md
+    .
+    ├── data/                               # Preprocessed experimental datasets
+    ├── termistors_calibration_params.json
+    ├── termistors_calibration_params_2.json
+    ├── utils.py                            # Temperature reconstruction utilities
+    ├── patch_characterization.py           # Script 1 – Thermal sensitivity estimation
+    ├── join_plots.py                       # Script 2 – Spatial and reproducibility analysis
+    └── README.md
 
 ------------------------------------------------------------------------
 
