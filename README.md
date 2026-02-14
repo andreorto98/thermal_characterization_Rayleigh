@@ -23,7 +23,7 @@ The code supports the results presented in the paper, where we:
 
 ------------------------------------------------------------------------
 
-# Repository Structure
+## Repository Structure
 
     .
     ├── data/                               # Preprocessed experimental datasets
@@ -36,14 +36,14 @@ The code supports the results presented in the paper, where we:
 
 ------------------------------------------------------------------------
 
-# Script 1 --- patch_characterization.py
+## Script 1 --- patch_characterization.py
 
 This script estimates the thermal sensitivity of each Rayleigh channel
 by fitting:
 
     signal = mT + q
 
-## Input
+### Input
 
 Preprocessed `.npz` files containing:
 
@@ -54,7 +54,7 @@ Preprocessed `.npz` files containing:
 
 Thermistor calibration parameters are loaded from JSON files.
 
-## Processing Steps
+### Processing Steps
 
 1.  Convert thermistor voltages to temperature.
 2.  Compute mean temperature from two calibrated thermistors.
@@ -65,14 +65,14 @@ Thermistor calibration parameters are loaded from JSON files.
     -   Uncertainty dm
     -   Pearson correlation coefficient
 
-## Output
+### Output
 
 -   Per-channel thermal sensitivity
 -   Statistical indicators
 -   Diagnostic plots
 -   Optional `.npz` export for downstream spatial analysis
 
-## Usage
+### Usage
 
 Edit:
 
@@ -84,7 +84,7 @@ Then run:
 
 ------------------------------------------------------------------------
 
-# Script 2 --- join_plots.py
+## Script 2 --- join_plots.py
 
 This script analyzes the spatial distribution of thermal sensitivity
 across the fiber and compares different experimental conditions.
@@ -103,13 +103,13 @@ Channel indices are converted to physical position (mm).
 
 ------------------------------------------------------------------------
 
-## Analysis Modes
+### Analysis Modes
 
 Set:
 
     analisi = 1, 2, 3, or 4
 
-### Analisi 1 --- Size Scaling
+#### Analisi 1 --- Size Scaling
 
 -   Extract peak thermal sensitivity
 -   Fit peak vs size factor (1×, 1.5×, 2×)
@@ -117,14 +117,14 @@ Set:
 
 Demonstrates linear scaling with patch dimensions.
 
-### Analisi 2 --- With vs Without Thermistors
+#### Analisi 2 --- With vs Without Thermistors
 
 -   Compute spatial skewness of sensitivity distribution
 -   Compare groups using Mann--Whitney U test
 
 Evaluates symmetry effects and compensation influence.
 
-### Analisi 3 --- Trial Repeatability
+#### Analisi 3 --- Trial Repeatability
 
 -   Compare repeated heating cycles
 -   Compute absolute and relative channel-wise differences
@@ -132,7 +132,7 @@ Evaluates symmetry effects and compensation influence.
 
 Quantifies inter-trial variability (\~1%).
 
-### Analisi 4 --- Replica Reproducibility
+#### Analisi 4 --- Replica Reproducibility
 
 -   Compare different replicas with identical geometry
 -   Compute spatial deltas and histograms
@@ -140,7 +140,7 @@ Quantifies inter-trial variability (\~1%).
 
 ------------------------------------------------------------------------
 
-# Citation
+## Citation
 
 If you use this repository or build upon this work, please cite:
 
